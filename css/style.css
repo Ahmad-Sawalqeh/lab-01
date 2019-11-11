@@ -3,7 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
-  color: #fff;
+  color: #000;
+}
+
+header, aside, article div, p, footer{
+  background-color: #aaa !important;
+  border: 1px solid #555;
 }
 
 .container{
@@ -15,26 +20,26 @@
 header{
   width: 960px;
   height: 100px;
-  background-color: rgb(39, 0, 102);
   line-height: 100px;
+  border-bottom: 0; 
 }
 
 aside{
   width: 200px;
   height: 600px;
   float: left;
-  background-color: rgb(155, 167, 0);
   line-height: 600px;
+  /* border-right: 0; */
 }
 main{
   width: 760px;
   float: right;
+  /* border-right: 1px; */
 }
 
 article{
   width: 760px;
   height: 200px;
-  /* float: right; */
 }
 
 article div{
@@ -42,16 +47,15 @@ article div{
   height: 200px;
   float: left;
   line-height: 200px;
+  border-bottom: 0;
 }
+
 article div:first-child{
-  background-color: rgb(4, 122, 138);
-}
-article div:last-child{
-  background-color: rgb(0, 85, 74);
+  border-left: 0;
+  border-right: 0;
 }
 
 section{
-  /* clear: both; */
   width: 760px;
   height: 250px;
 }
@@ -61,34 +65,97 @@ p{
   height: 250px;
   float: left;
   line-height: 190px;
-}
-p:first-child{
-  background-color: rgb(5, 252, 25);
-}
-p:nth-child(2){
-  background-color: rgb(23, 199, 0);
-}
-p:nth-child(3){
-  background-color: rgb(23, 124, 3);
-}
-p:last-child{
-  background-color: rgb(2, 63, 0);
+  border-left: 0;
 }
 
 footer{
   width: 760px;
   height: 150px;
   line-height: 150px;
-  background-color: rgb(126, 4, 4);
+  border-top: 0;
+  border-left: 0;
 }
 
-@media (max-width: 1281px) {
-  body{
-    background-color: aqua;
-  }
+@media screen and (max-width: 786px) {
+
+header, aside, article div, p, footer{
+  background-color: #aaa !important;
+  border: 1px solid #555;
+}
+
+.container{
+  width: 480px;
+  margin: 0 auto;
+  height: auto;
+}
+
+header{
+  width: 480px;
+  height: 75px;
+  line-height: 75px;
+  border-bottom: 0;
+}
+
+aside{
+  width: 480px;
+  height: 150px;
+  float: left;
+  line-height: 150px;
+  border-bottom: 0;
+}
+main{
+  width: 480px;
+  float: right;
+}
+
+article{
+  width: 480px;
+}
+
+article div{
+  width: 480px;
+  height: 125px;
+  float: left;
+  line-height: 125px;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+article div:first-child{
+  border: 1px solid #555;
+}
+article div:last-child{
+  border-bottom: 0;
+  border-top: 0;
+}
+
+section{
+  width: 480px;
+}
+
+p{
+  width: 240px;
+  height: 250px;
+  float: left;
+  line-height: 250px;
+}
+p:nth-child(2){
+  border-left: 0;
+}
+p:nth-child(3){
+  border-top: 0;
+}
+p:last-child{
+  border-left: 0;
+  border-top: 0;
+}
+
+footer{
+  clear: both;
+  width: 480px;
+  height: 80px;
+  line-height: 80px;
+  border-top: 0;
+}
   
-  *{
-    display: block;
-  }
   
 }

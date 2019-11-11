@@ -83,6 +83,9 @@ footer{
 }
 
 @media (max-width: 1281px) {
+  body{
+    background-color: aqua;
+  }
   
   *{
     display: block;

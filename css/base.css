@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+}
+
+/* header, aside, article div, p, footer{
+  background-color: #aaa;
+  border: 1px solid #555;
+} */

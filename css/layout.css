@@ -1,0 +1,77 @@
+@media (max-width: 786px) {
+  
+  .container{
+    width: 480px;
+    margin: 0 auto;
+    height: auto;
+  }
+  
+  header{
+    width: 480px;
+    height: 75px;
+    line-height: 75px;
+    border-bottom: 0;
+  }
+  
+  aside{
+    width: 480px;
+    height: 150px;
+    float: left;
+    line-height: 150px;
+    border-bottom: 0;
+  }
+  main{
+    width: 480px;
+    float: right;
+  }
+  
+  article{
+    width: 480px;
+  }
+  
+  article div{
+    width: 480px;
+    height: 125px;
+    float: left;
+    line-height: 125px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
+  article div:first-child{
+    border: 1px solid #555;
+  }
+  article div:last-child{
+    border-bottom: 0;
+    border-top: 0;
+  }
+  
+  section{
+    width: 480px;
+  }
+  
+  p{
+    width: 240px;
+    height: 250px;
+    float: left;
+    line-height: 250px;
+  }
+  p:nth-child(2){
+    border-left: 0;
+  }
+  p:nth-child(3){
+    border-top: 0;
+  }
+  p:last-child{
+    border-left: 0;
+    border-top: 0;
+  }
+  
+  footer{
+    clear: both;
+    width: 480px;
+    height: 80px;
+    line-height: 80px;
+    border-top: 0;
+  }
+  
+}
